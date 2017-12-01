@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PhotoApp</string>
+    <string name="photos">Photos</string>
+    <string name="login">Login</string>
+    <string name="photo_detail">Photo Details</string>
+    <string name="desc">Description : </string>
+    <string name="latititude">Latitude : </string>
+    <string name="longitude">Longitude : </string>
+    <string name="fav_count">Favourite Count : </string>
+    <string name="name">Name : </string>
+    <string name="lorem_ispum">Lorem Ispum</string>
+    <string name="city">City : </string>
+    <string name="country">Country</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_email_password">Invalid Email or Password</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="no_network">No Internet Connection</string>
+    <string name="something_went_wrong">Something went wrong, Please try again later</string>
+</resources>
