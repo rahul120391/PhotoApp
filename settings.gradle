@@ -1,1 +1,1 @@
-include ':app',':500pxandroidsdk'
+include ':app', ':500pxandroidsdk', ':500px-android-sdk'
