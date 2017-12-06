@@ -34,7 +34,7 @@ class WebServiceController(modelToViewDataTransfer: ModelToViewDataTransfer) : I
                         { myphotos: MyPhotos ->
                             moveResultFromIoToUi(myphotos)
                         }, { e: Throwable ->
-
+                    moveErrorToUiThread(e)
 
                 }, {
 
@@ -64,7 +64,7 @@ class WebServiceController(modelToViewDataTransfer: ModelToViewDataTransfer) : I
     }
 
     override fun moveResultFromIoToUi(myPhotos: MyPhotos) {
-       val disposable= Flowable.just(myPhotos).
+        val disposable = Flowable.just(myPhotos).
                 subscribeOn(Schedulers.io()).
                 observeOn(AndroidSchedulers.mainThread())
                 .subscribe({ myphoto: MyPhotos ->
@@ -118,7 +118,6 @@ class WebServiceController(modelToViewDataTransfer: ModelToViewDataTransfer) : I
                 )
         compositeDisposable.add(disposable)
     }
-
 
 
     override fun clearDisposables() {
